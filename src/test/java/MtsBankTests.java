@@ -1,7 +1,6 @@
 import Pages.MainPage;
 import Pages.MtsDengiPage;
-import io.qameta.allure.Step;
-import jdk.jfr.Description;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -12,10 +11,9 @@ public class MtsBankTests extends BaseTest {
     MainPage mainPage = new MainPage();
 
     @Test
-    @Description("Первый тест")
     public void test1() {
 
-        mainPage.openPage(url);
+        mainPage.openPage();
         mainPage.hoverOnKarti();
         String a = mainPage.getProcent();
         String b = mainPage.getKashback();
