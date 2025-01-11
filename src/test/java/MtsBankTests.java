@@ -14,6 +14,7 @@ public class MtsBankTests extends BaseTest {
     @Test
     @Description("Первый тест")
     public void test1() {
+
         mainPage.openPage(url);
         mainPage.hoverOnKarti();
         String a = mainPage.getProcent();
